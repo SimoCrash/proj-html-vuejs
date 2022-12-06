@@ -8,8 +8,9 @@
         <div class="h-t-right-container">
             <div>
                 <div>
+                    <img :src="'img/' + flagIcon + '.png'" alt="">
                     <select>
-                        <option v-for="lang in arrLanguage" :key="lang"> {{`<img src="'/img/' + ${lang.slice(0,2).toLowerCase()} + '.png'" alt="">` + lang }}</option>                       
+                        <option v-for="lang in arrLanguage" :key="lang"> {{ lang }}</option>                       
                     </select>
                     
                 </div>
@@ -44,7 +45,8 @@ export default {
     data(){
         return {
             arrMenuHeader: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
-            arrLanguage: ['ENGLISH', 'FRANÇAIS', 'DEUTSCH']
+            arrLanguage: ['ENGLISH', 'FRANÇAIS', 'DEUTSCH'],
+            flagIcon: 'en',
         }
     }
 }
