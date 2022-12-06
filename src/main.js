@@ -18,10 +18,15 @@ import { faChevronDown,
          faPerson,
          faCode
         } from '@fortawesome/free-solid-svg-icons'; // importiamo le icone che ci servono
-import {faCircleUser,
-        faCircle,
-        faClock,
+import { faCircleUser,
+         faCircle,
+         faClock,
         } from '@fortawesome/free-regular-svg-icons';
+import { faSquareFacebook,
+        faTwitter,
+        faInstagram,
+        faLinkedin
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'; // importazione del componente FontAwesomeIcon
 
 library.add(faChevronDown,
@@ -42,7 +47,11 @@ library.add(faChevronDown,
             faClock,
             faGlobe,
             faPerson,
-            faCode
+            faCode,
+            faSquareFacebook,
+            faTwitter,
+            faInstagram,
+            faLinkedin
             ); // aggiungiamo le icone nella libreria del progetto
 Vue.component('FontAwesomeIcon', FontAwesomeIcon); // registrazione globale del componente FontAwesomeIcon per renderlo usabile in qualsiasi parte del codice senza ulteriore importazione
 

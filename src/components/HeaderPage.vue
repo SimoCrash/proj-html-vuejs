@@ -138,3 +138,7 @@ export default {
     <font-awesome-icon icon="fa-solid fa-globe" />
     <font-awesome-icon icon="fa-solid fa-person" />
     <font-awesome-icon icon="fa-solid fa-code" />
+    <font-awesome-icon icon="fa-brands fa-square-facebook" />
+    <font-awesome-icon icon="fa-brands fa-twitter" />
+    <font-awesome-icon icon="fa-brands fa-instagram" />
+    <font-awesome-icon icon="fa-brands fa-linkedin" />
