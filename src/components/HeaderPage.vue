@@ -1,17 +1,35 @@
 <template>
   <div>
     <div class="header-top">
-        <div class="h-t-container-img"><img src="@/img/dark-logo.png" alt=""></div>
-        <div></div>
-        <div></div>
+        <div class="container-img"><img src="@/img/dark-logo.png" alt=""></div>
+        <div class="menubar">
+            <div v-for="list in arrMenuHeader" :key="list">{{ list }} <font-awesome-icon icon="fa-solid fa-chevron-down" /></div>
+        </div>
+        <div class="h-t-right-container">
+            <div>
+                <div>
+                    <select>
+                        <option v-for="lang in arrLanguage" :key="lang"> {{`<img src="'/img/' + ${lang.slice(0,2).toLowerCase()} + '.png'" alt="">` + lang }}</option>                       
+                    </select>
+                    
+                </div>
+                <div>
+                    <font-awesome-icon icon="fa-regular fa-circle-user" />
+                </div>
+            </div>
+            <div>
+                <input type="text" placeholder="Search">
+                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            </div>
+        </div>
     </div>
     <div class="header-bottom">
         <div class="h-bottom-left">
             <div class="container-title">
                 <h2 class="secondary-title">New Challanges, New Skills</h2>
-                <h1 class="h-b-title">BUILD YOUR OWN LIFE COACHING BUSINESS</h1>
-                <h3 class="h-b-third-title">Whole-Life Business Coaching for committed entrepreneurs</h3>
-                <button class="h-b-btn"><h4>Get started today</h4></button>
+                <h1 class="title">BUILD YOUR OWN LIFE COACHING BUSINESS</h1>
+                <h3 class="third-title">Whole-Life Business Coaching for committed entrepreneurs</h3>
+                <button class="btn-start"><h4>Get started today</h4></button>
             </div>
         </div>
         <div class="h-bottom-right">
@@ -23,21 +41,40 @@
 
 <script>
 export default {
-
+    data(){
+        return {
+            arrMenuHeader: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
+            arrLanguage: ['ENGLISH', 'FRANÇAIS', 'DEUTSCH']
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     .header-top {
-        height: 100px;
+        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .h-t-container-img {
+        .container-img {
             margin: 150px;
             img {
                 width: 50%;
             }
+        }
+        .menubar {
+            display: flex;
+            gap: 4rem;
+            color: #3F3A64;
+            flex: 1 0 0;
+            font-weight: 600;
+            .fa-chevron-down {
+                font-size: 9px;
+            }
+        }
+        .h-t-right-container {
+            display: flex;
+            align-items: center;
         }
     }
     .header-bottom {
@@ -53,14 +90,14 @@ export default {
                 .secondary-title {
                     color: #45B9A7;
                 }
-                .h-b-title {
+                .title {
                     font-size: 50px;
                     color: #333333;
                 }
-                .h-b-third-title {
+                .third-title {
                     color: #7B7B7C;
                 }
-                .h-b-btn {
+                .btn-start {
                     background-color: #45B9A7;
                     border: none;
                     border-radius: 5px;
@@ -76,14 +113,15 @@ export default {
             background-image: url('@/img/home-business-hero-global-image.png');
             background-repeat: no-repeat;
             width: 50%;
+            img {
+                margin-top: 50px;
+            }
         }
     }
 </style>
 
 
-<font-awesome-icon icon="fa-solid fa-chevron-down" />
-    <font-awesome-icon icon="fa-regular fa-circle-user" />
-    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+    
     <font-awesome-icon icon="fa-solid fa-ruler" /> <!-- icona a pagamento -->
     <font-awesome-icon icon="fa-solid fa-circle-radiation" /> <!-- icona a pagamento-->
     <font-awesome-icon icon="fa-solid fa-book" />
