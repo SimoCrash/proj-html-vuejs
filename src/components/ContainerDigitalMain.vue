@@ -7,7 +7,7 @@
       coaching in the new age of digitalization.
     </h1>
     <div class="container-cards">
-      <div class="card">
+      <div class="cards">
         <h2>One to One</h2>
         <p>
           Getting the necessary clarity about the 
@@ -15,7 +15,7 @@
           game.
         </p>
       </div>
-      <div class="card">
+      <div class="cards">
         <h2>Anywhere</h2>
         <p>
           Access to valutable and portable 
@@ -23,7 +23,7 @@
           live anywhere you want.
         </p>
       </div>
-      <div class="card">
+      <div class="cards">
         <h2>On Time</h2>
         <p>
           Punctually is out top priority beacuse it's 
@@ -31,7 +31,7 @@
           quality.
         </p>
       </div>
-      <div class="card">
+      <div class="cards last-cards">
         <h2>Online Coures</h2>
         <p>
           Online business coaching now offers you 
@@ -39,7 +39,7 @@
           business into success.
         </p>
       </div>
-      <div class="card">
+      <div class="cards last-cards">
         <h2>Consulting</h2>
         <p>
           You will get a clear sense of direction for 
@@ -47,7 +47,7 @@
           faster results.
         </p>
       </div>
-      <div class="card">
+      <div class="cards last-cards">
         <h2>Self Development</h2>
         <p>
           Business Coaching often keep your focus 
@@ -72,7 +72,7 @@ export default {
 <style lang="scss" scoped>
   $color-base: #45B9A7;
   .container-page {
-    max-width: 55%;
+    max-width: 65%;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -83,14 +83,27 @@ export default {
     }
     .primary-title {
       text-align: center;
+      color: #333333;
+      width: 85%;
+      margin: auto;
+    }
+    p {
+      color: #7B7B7C;
     }
   }
   .container-cards {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    .card {
-      width: calc((100% - 2rem * 2) / 3);
+    gap: 5.5rem;
+    .cards {
+      width: calc((100% - 5.5rem * 2) / 3);
+      h2 {
+        color: #333333;
+      }
+    }
+    .last-cards {
+      margin-top: -4rem;
     }
   }
   .container-btn {

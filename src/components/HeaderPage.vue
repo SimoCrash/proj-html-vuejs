@@ -131,7 +131,6 @@ export default {
     <font-awesome-icon icon="fa-solid fa-circle-chevron-up" /> <!-- icona a pagamento-->
     <font-awesome-icon icon="fa-solid fa-circle-chevron-down" /> <!-- icona a pagamento-->
     <font-awesome-icon icon="fa-solid fa-location-dot" /> <!-- icona a pagamento-->
-    <font-awesome-icon icon="fa-solid fa-arrow-right-long" /> 
     <font-awesome-icon icon="fa-regular fa-circle" />
     <font-awesome-icon icon="fa-solid fa-spinner" />
     <font-awesome-icon icon="fa-solid fa-people-arrows" />
