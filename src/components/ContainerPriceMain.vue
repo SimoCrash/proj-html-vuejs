@@ -68,8 +68,10 @@ export default {
       }
     .container-btn {
       width: 40%;
-      margin: auto;
+      margin: 3rem auto;
       text-align: center;
+      font-weight: bold;
+      color: #7B7B7C;
     }
   }
   .container-cards {

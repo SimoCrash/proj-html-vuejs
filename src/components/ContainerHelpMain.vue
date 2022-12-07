@@ -95,6 +95,9 @@ export default {
       }
       .container-text {
         margin: 0 30px;
+        p {
+          color: #7B7B7C;
+        }
       }
       .container-arrow {
         border-top: 1px solid #f5f5f5;
