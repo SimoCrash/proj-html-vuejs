@@ -95,6 +95,7 @@ export default {
     width: 50%;
     margin-right: 20%;
     color: white;
+    padding-bottom: 1rem;
     h1 {
       font-size: 50px;
     }
