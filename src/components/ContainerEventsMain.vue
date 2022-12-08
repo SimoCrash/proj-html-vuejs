@@ -112,6 +112,7 @@ export default {
       justify-content: center;
       margin-top: 2rem;
       font-size: 20px;
+      z-index: 7;
       button {
         padding: 0;
         color: #20AD96;
@@ -131,6 +132,7 @@ export default {
       justify-content: space-between;
       padding: 0 1rem 1rem;
       border-radius: 5px;
+      z-index: 7;
       .location {
         color: #7E7E7E;
       }
@@ -159,7 +161,7 @@ export default {
   }
   .container-position {
     position: relative;
-    padding: 100px 0 150px;
+    padding-top: 100px;
     .img-bottom {
       position: absolute;
       bottom: 0;
