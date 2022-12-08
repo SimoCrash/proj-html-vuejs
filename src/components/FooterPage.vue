@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-bg">
     
   </div>
 </template>
@@ -10,6 +10,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  .container-bg {
+    background-color: #171621;
+    color: #7E7E7E;
+    position: relative;
+  }
 </style>
