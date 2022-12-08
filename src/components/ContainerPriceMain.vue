@@ -72,6 +72,10 @@ export default {
       text-align: center;
       font-weight: bold;
       color: #7B7B7C;
+      button {
+        border: none;
+        border-bottom: 1px solid #898989;
+      }
     }
   }
   .container-cards {
