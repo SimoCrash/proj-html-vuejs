@@ -1,16 +1,16 @@
 <template>
   <div>
-    <div class="header-top">
+    <div class="header-top" id="header">
         <div class="container-img"><img src="@/img/dark-logo.png" alt=""></div>
         <div class="menubar">
-            <div v-for="list in arrMenuHeader" :key="list">{{ list }} <font-awesome-icon icon="fa-solid fa-chevron-down" /></div>
+            <div v-for="list in arrMenuHeader" :key="list"><a :href="'#' + list">{{ list }} <font-awesome-icon icon="fa-solid fa-chevron-down" /></a></div>
         </div>
         <div class="h-t-right-container">
             <div>
                 <div>
                     <img :src="'img/' + flagIcon + '.png'" alt="">
-                    <select>
-                        <option v-for="lang in arrLanguage" :key="lang"> {{ lang }}</option>                       
+                    <select @change="changes(value)">
+                        <option v-for="lang in arrLanguage" :key="lang" :value="lang" > {{ lang }}</option>                       
                     </select>
                     
                 </div>
@@ -48,11 +48,20 @@ export default {
             arrLanguage: ['ENGLISH', 'FRANÇAIS', 'DEUTSCH'],
             flagIcon: 'en',
         }
+    },
+    methods: {
+        changes(event){
+            this.flagIcon = event.slice(0,2).toLowerCase();
+        }
     }
 }
+
 </script>
 
 <style lang="scss" scoped>
+    a {
+        text-decoration: none;
+    }
     .header-top {
         height: 80px;
         display: flex;
@@ -108,6 +117,9 @@ export default {
                         color: white;
                     }
                 }
+                .btn-start:hover {
+                    background-color: #3F3A64;
+                }
             }
             
         }
@@ -143,3 +155,4 @@ export default {
     <font-awesome-icon icon="fa-brands fa-twitter" />
     <font-awesome-icon icon="fa-brands fa-instagram" />
     <font-awesome-icon icon="fa-brands fa-linkedin" />
+    <font-awesome-icon icon="fa-solid fa-arrow-up-long" />

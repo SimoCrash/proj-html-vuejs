@@ -31,9 +31,7 @@
     <div class="container-rights">
       <span class="corp">c</span><span> 2020 Maxcoach. All Rights Reserved</span> 
     </div>
-    <div class="container-btn">
-      <button></button>
-    </div>
+    <a href="#header"><button class="btn-up"><font-awesome-icon icon="fa-solid fa-arrow-up-long" /></button></a>
   </div>
 </template>
 
@@ -99,5 +97,21 @@ export default {
       border-radius: 100%;
       border: 1px solid #7E7E7E;
     }
+  }
+  .btn-up {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #20AD96;
+    color: white;
+    cursor: pointer;
+    border: none;
   }
 </style>

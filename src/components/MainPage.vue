@@ -1,12 +1,12 @@
 <template>
   <div>
-    <container-digital-main></container-digital-main>
-    <container-help-main></container-help-main>
-    <container-price-main></container-price-main>
+    <container-digital-main id="Home"></container-digital-main>
+    <container-help-main id="Pages"></container-help-main>
+    <container-price-main id="Courses"></container-price-main>
     <container-faq-main></container-faq-main>
-    <container-events-main></container-events-main>
-    <container-comments-main></container-comments-main>
-    <container-subcribe-main></container-subcribe-main>
+    <container-events-main id="Features"></container-events-main>
+    <container-comments-main id="Blog"></container-comments-main>
+    <container-subcribe-main id="Shop"></container-subcribe-main>
   </div>
 </template>
 
