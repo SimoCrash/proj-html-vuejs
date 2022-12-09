@@ -8,8 +8,8 @@
         <div class="h-t-right-container">
             <div>
                 <div>
-                    <img :src="'img/' + flagIcon + '.png'" alt="">
-                    <select @change="changes(value)">
+                    <img :src="'img/' + flagchange + '.png'" alt="">
+                    <select @change="changes()" v-model="flagIcon">
                         <option v-for="lang in arrLanguage" :key="lang" :value="lang" > {{ lang }}</option>                       
                     </select>
                     
@@ -46,12 +46,13 @@ export default {
         return {
             arrMenuHeader: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
             arrLanguage: ['ENGLISH', 'FRANÇAIS', 'DEUTSCH'],
-            flagIcon: 'en',
+            flagIcon: 'ENGLISH',
+            flagchange: 'en',
         }
     },
     methods: {
-        changes(event){
-            this.flagIcon = event.splice(0,2).toLowerCase();
+        changes(){
+            this.flagchange = this.flagIcon.slice(0,2).toLowerCase();
         }
     }
 }
