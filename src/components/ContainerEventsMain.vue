@@ -156,6 +156,11 @@ export default {
           border-radius: 5px;
           padding: 5px 25px;
         }
+        button:hover {
+          background-color: #3f3a64;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }

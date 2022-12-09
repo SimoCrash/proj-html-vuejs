@@ -81,6 +81,11 @@ export default {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
+      button:hover {
+        background-color: #3f3a64;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
   .part-right {

@@ -118,6 +118,13 @@ export default {
         color: $color-base;
         font-weight: bold;
       }
+      
+    }
+    .btn-more:hover {
+      background-color: #3f3a64;
+      h4 {
+        color: white;
+      }
     }
     .btn-start {
         background-color: $color-base;
@@ -129,6 +136,9 @@ export default {
           color: white;
           font-weight: bold;
         }
-      }
+    }
+    .btn-start:hover {
+                    background-color: #3F3A64;
+                }
   }
 </style>

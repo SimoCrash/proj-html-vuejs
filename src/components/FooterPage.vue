@@ -114,4 +114,9 @@ export default {
     cursor: pointer;
     border: none;
   }
+  .btn-up:hover {
+        background-color: #3f3a64;
+        color: white;
+        cursor: pointer;
+      }
 </style>

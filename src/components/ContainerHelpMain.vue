@@ -52,6 +52,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
 
@@ -108,7 +109,10 @@ export default {
         color: #2BB19B;
         font-weight: bold;
       }
-
+      .container-arrow:hover {
+        background-color: #2BB19B;
+        color: white;
+      }
     }
   }
   

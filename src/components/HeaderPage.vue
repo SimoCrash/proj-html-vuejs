@@ -51,7 +51,7 @@ export default {
     },
     methods: {
         changes(event){
-            this.flagIcon = event.slice(0,2).toLowerCase();
+            this.flagIcon = event.splice(0,2).toLowerCase();
         }
     }
 }

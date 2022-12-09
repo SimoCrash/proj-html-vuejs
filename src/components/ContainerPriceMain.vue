@@ -76,6 +76,10 @@ export default {
         border: none;
         border-bottom: 1px solid #898989;
       }
+      button:hover {
+        
+        cursor: pointer;
+      }
     }
   }
   .container-cards {
