@@ -14,11 +14,11 @@
                     </select>
                     
                 </div>
-                <div>
-                    <font-awesome-icon icon="fa-regular fa-circle-user" />
-                </div>
             </div>
-            <div>
+            <div class="container-fontawesome">
+                <font-awesome-icon icon="fa-regular fa-circle-user" />
+            </div>
+            <div class="container-h-h-right">
                 <input type="text" placeholder="Search">
                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
             </div>
@@ -87,6 +87,20 @@ export default {
         .h-t-right-container {
             display: flex;
             align-items: center;
+            select {
+                border: none;
+            }
+        }
+        .container-fontawesome {
+            padding-right: 1rem;
+        }
+        .container-h-h-right{
+            display: flex;
+            padding: 1rem;
+            border-left: 1px solid #7B7B7C;
+            input {
+                height: 100%;
+            }
         }
     }
     .header-bottom {
